@@ -1,12 +1,10 @@
-﻿int m = InputInt("Введите M: ");
-int n = InputInt("Введите N: ");
-Console.WriteLine($"Сумма элементов от {m} до {n} = {CountNaturalSum(m, n)}");
+﻿Console.WriteLine("Введите m");
+int m = Convert.ToInt32(Console.ReadLine());
 
-int InputInt(string output)
-{
-    Console.Write(output);
-    return int.Parse(Console.ReadLine());
-}
+Console.WriteLine("Введите n");
+int n = Convert.ToInt32(Console.ReadLine());
+
+Console.WriteLine($"Сумма элементов от {m} до {n} = {CountNaturalSum(m, n)}");
 
 int CountNaturalSum(int m, int n)
 {
